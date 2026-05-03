@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#app {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-estudiante,
+.estadisticas,
+.filtros,
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.info-estudiante h2,
+.estadisticas h2 {
+  margin-bottom: 10px;
+}
+
+.info-estudiante p,
+.estadisticas p {
+  margin: 8px 0;
+}
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-filtro {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
+
+.btn-filtro-activo {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+#contenedor-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 12px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-categoria {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.prioridad-alta {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.prioridad-media {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.prioridad-baja {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.estado-activo {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.estado-inactivo {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-eliminar {
+  border: none;
+  background-color: #dc2626;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background-color: #b91c1c;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+}
